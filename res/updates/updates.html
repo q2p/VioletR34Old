@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Обновления </title>
+		<link rel="icon" type="image/vnd.microsoft.icon" href="s/updates/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="s/updates/styles.css">
+		<script type="text/javascript" src="s/updates/script.js"></script>
+	</head>
+
+	<body>
+		<div id="content" style="display: none">
+			<div id="item_add" onclick="createNew()">
+				<div class="resource" style="background-image: url(s/updates/new.png);"></div>
+				<div class="info">
+					<div class="name">Добавить</div>
+				</div>
+			</div>
+		<div id="list"></div>
+		</div>
+		<div id="editor" style="display: none">
+			<div class="editor_button" onclick="closeFav()">Закрыть</div>
+			<div class="editor_button" onclick="saveFav()">Сохранить</div>
+			<div class="editor_button" onclick="deleteFav()">Удалить</div>
+			<div class="editor_desctiptor">URL</div>
+			<div id="url_wrapper">
+				<div class="url_static" id="beg"></div>
+				<div id="url_center">
+					<input id="url_input" value="" onkeyup="checkRes()">
+				</div>
+				<div class="url_static" id="end"></div>
+			</div>
+			<div class="editor_desctiptor">Название</div>
+			<input id="title_input" value="">
+			<div class="editor_desctiptor">Ресурс</div>
+			<select id="res_input" name="res" onchange="resChange(this.value)"></select>
+		</div>
+	</body>
+</html>

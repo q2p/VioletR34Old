@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Дескриптор </title>
+		<link rel="icon" type="image/vnd.microsoft.icon" href="s/descriptor/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="s/descriptor/styles.css">
+		<script type="text/javascript" src="s/descriptor/script.js"></script>
+	</head>
+	<body>	
+		<div id="container"></div>
+		<div id="info">
+			<div class="action_button" onclick="randomFile()">Случайный файл</div>
+			<div class="action_button" onclick="fileByPath(null)">Файл по пути</div>
+			<div id="file" style="display:none">
+				<div class="action_button" onclick="localLink()">Локальная ссылка</div>
+				<div class="action_button" onclick="fileByPath(filePath)">Восстановить</div>
+				<div class="action_button" onclick="saveFile()">Сохранить</div>
+				<h1> Текст </h1>
+				<textarea id="text"></textarea>
+				<h1> Заметки </h1>
+				<textarea id="todo"></textarea>
+				<div id="ideas"></div>
+				<h1> Поиск </h1>
+				<input id="search" type="text" onkeyup="searchFor()" autocomplete="off"/>
+				<h1>Тэги</h1>
+				<div>
+					<h2>Используемые</h2>
+					<div class="tags_collection" id="tags_u"></div>
+					<h2>Доступные</h2>
+					<div class="tags_collection" id="tags_a"></div>
+					<h2>Игнорируемые</h2>
+					<div class="tags_collection" id="tags_i"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

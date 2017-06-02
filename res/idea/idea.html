@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Идея</title>
+		<link rel="icon" type="image/vnd.microsoft.icon" href="s/idea/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="s/idea/styles.css">
+		<script type="text/javascript" src="s/idea/script.js"></script>
+	</head>
+	<body>
+		<div id="menu_div">
+			<a class="action_button" href="ideas?page=1"> Идеи </a>
+			<a class="action_button" href="updates"> Обновления </a>
+			<a class="action_button" href="tagger"> Тэггер </a>
+			<a class="action_button" href="errors"> Ошибки </a>
+		</div>
+		<div id="content_div">
+			<div id="title"></div>
+			<div id="view_port" style="display: block">
+				<div class="editor_button" onclick="editIdea()">Изменить идею</div>
+				<div id="v_text" style="display: none">
+					<h1 class="header">Текст:</h1>
+					<p></p>
+				</div>
+				<div id="v_todo" style="display: none">
+					<div>
+					<h1 class="header">TODO:</h1>
+					<p></p>
+					</div>
+				</div>
+				<div id="v_anchors" style="display: none">
+					<h1 class="header">Якоря:</h1>
+					<div class="container"></div>
+				</div>
+				<div id="v_images" style="display: none">
+					<h1 class="header">Изображения:</h1>
+					<div class="container"></div>
+				</div>
+				<div id="v_audios" style="display: none">
+					<h1 class="header">Аудио:</h1>
+					<div class="container"></div>
+				</div>
+				<div id="v_videos" style="display: none">
+					<h1 class="header">Видео:</h1>
+					<div class="container"></div>
+				</div>
+				<div id="v_links" style="display: none">
+					<h1 class="header">Ссылки:</h1>
+					<div class="container"></div>
+				</div>
+				<div id="v_files" style="display: none">
+					<h1 class="header">Файлы:</h1>
+					<div class="container"></div>
+				</div>
+			</div>
+			<div id="edit_port" style="display: none">
+				<div class="editor_button" onclick="viewIdea()">Закрыть редактор</div>
+				<div class="editor_button" onclick="editIdea()">Отменить изменения</div>
+				<div class="editor_button" onclick="moveToPosts()" id="move_to_posts">Перевести в посты</div>
+				<div class="editor_button" onclick="removeIdea()">Удалить</div>
+				<div class="editor_button" onclick="saveChanges()">Сохранить изменения</div>
+				<h1 class="header">Название:</h1>
+				<input id="e_title" type="text" size="50" value="'+m[1]+'">
+				<h1 class="header">Текст:</h1>
+				<textarea id="e_text" class="do_wrap"></textarea>
+				<h1 class="header">TODO:</h1>
+				<textarea id="e_todo" class="do_wrap"></textarea>
+				<h1 class="header">Якоря:</h1>
+				<textarea id="e_anchors" class="no_wrap"></textarea>
+				<h1 class="header">Изображения:</h1>
+				<textarea id="e_images" class="no_wrap"></textarea>
+				<h1 class="header">Аудио:</h1>
+				<textarea id="e_audios" class="no_wrap"></textarea>
+				<h1 class="header">Видео:</h1>
+				<textarea id="e_videos" class="no_wrap"></textarea>
+				<h1 class="header">Ссылки:</h1>
+				<textarea id="e_links" class="no_wrap"></textarea>
+				<h1 class="header">Файлы:</h1>
+				<textarea id="e_files" class="no_wrap"></textarea>
+			</div>
+		</div>
+	</body>
+</html>

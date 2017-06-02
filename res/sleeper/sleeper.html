@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Сонник </title>
+		<link rel="icon" type="image/vnd.microsoft.icon" href="s/sleeper/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="s/sleeper/styles.css"/>
+		<script type="text/javascript" src="s/sleeper/script.js"></script>
+	</head>
+	<body>	
+		<div id="list"></div>
+		<div id="sidebar">
+			<div id="selector">
+				<input id="date" type="text" placeholder="Дата" />
+				<div class="action_button" onclick="today()">Сегодня</div>
+				<div class="action_button" onclick="openByInput()">Открыть</div>
+			</div>
+			<div id="info">
+				<div class="action_button" id="edit_button" onclick="editDream()" style="display:none">Изменить</div>
+				<div class="action_button" id="close_dream_button" onclick="closeDream()" style="display:none">Закрыть</div>
+				<div class="action_button" id="close_editor_button" onclick="showDream()" style="display:none">Закрыть редактор</div>
+				<div class="action_button" id="restore_button" onclick="editDream()" style="display:none">Восстановить</div>
+				<div class="action_button" id="save_button" onclick="saveDream()" style="display:none">Сохранить</div>
+				<div class="action_button" id="delete_button" onclick="deleteDream()" style="display:none">Удалить</div>
+				<h1 id="date_output" style="display:none"></h1>
+				<p id="show_text" style="display:none"></p>
+				<textarea id="edit_text" style="display:none"></textarea>
+			</div>
+		</div>
+	</body>
+</html>

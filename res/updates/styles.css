@@ -1,0 +1,156 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+body, html {
+	background-color: #000000;
+}
+html {
+	min-width: 746px;
+}
+#content {
+	padding-top: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+#editor {
+	padding: 5px;
+	max-width: 700px;
+	margin: auto;
+}
+.upBlock {
+	margin-bottom: 5px;
+}
+.announcer {
+	display: block;
+	height: 18px;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+#url_wrapper {
+	display: table;
+	width: 100%;
+	height: 24px;
+	color: #ffffff;
+	margin-bottom: 4px;
+	white-space: nowrap;
+}
+.url_static {
+	padding-left: 4px;
+	padding-right: 4px;
+	display: table-cell;
+	background: #2f2f2f;
+	height: 24px;
+	color: #ffffff;
+}
+#url_center {
+	display: table-cell;
+	background: #ff0000;
+	width: 100%;
+	position: relative;
+}
+#beg {
+	float: left;
+}
+#end {
+	float: right;
+}
+#url_input {
+	position: absolute;
+	top: 0px;
+}
+input {
+	overflow: hidden;
+	border: 0px;
+	background: #0f0f0f;
+	outline: none;
+	height: 24px;
+	width: 100%;
+}
+#res_input {
+	display: block;
+	overflow: hidden;
+	border: 0px;
+	background: #0f0f0f;
+	outline: none;
+	width: 100%;
+	height: 24px;
+	color: #ffffff;
+    font-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.editor_button {
+	padding-left: 4px;
+	height: 24px;
+	background-color: #2f2f2f;
+	margin-bottom: 4px;
+	width: 100%;
+}
+.editor_button:hover {
+	background-color: #7f3fff;
+}
+#item_add {
+	position: relative;
+	cursor: pointer;
+	height: 24px;
+	background-color: #2f2f2f;
+	margin-bottom: 4px;
+}
+#item_add:hover {
+	background-color: #7f3fff;
+}
+.item {
+	position: relative;
+	cursor: pointer;
+	height: 24px;
+	background-color: #2f2f2f;
+	margin-bottom: 4px;
+}
+.resource {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 0px;
+}
+.edit_button {
+	display: none;
+	width: 24px;
+	height: 24px;
+	background-image: url(/s/updates/edit.png);
+	background-color: #7f3fff;
+}
+.resource:hover .edit_button {
+	display: block;
+}
+.info {
+	position: absolute;
+	left: 24px;
+	right: 0px;
+	height: 24px;
+	overflow: hidden;
+}
+.name {
+	height:24px;
+	padding-left: 4px;
+	overflow: hidden;
+}
+.name:hover {
+	background-color: #7f3fff;
+}
+.date {
+	position: absolute;
+	right: 0px;
+	height:24px;
+	overflow: hidden;
+	padding-left:4px;
+	padding-right:4px;
+	background-color: #3f3f3f;
+}
+.date:hover {
+	background-color: #7f3fff;
+}
